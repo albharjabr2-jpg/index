@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خدمات الكهرباء – تأسيس وتشطيب | جدة</title>
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D8M8TKJC77UAV4NU389G');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #f5c518;
+      --gold-dark: #d4a80a;
+      --blue: #0d47a1;
+      --blue-light: #1565c0;
+      --dark: #0a0e1a;
+      --card-bg: #111827;
+      --text: #f0f4ff;
+      --muted: #94a3b8;
+      --green: #25d366;
+      --call-blue: #1976d2;
+      --radius: 18px;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0a0e1a 0%, #0d1b3e 60%, #0a1628 100%);
+      min-height: 100vh;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 12px 80px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -120px; left: -120px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(245,197,24,0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -80px; right: -80px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(13,71,161,0.18) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── CARD ─── */
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 480px;
+      background: linear-gradient(160deg, #141d35 0%, #0f1726 100%);
+      border: 1.5px solid rgba(245,197,24,0.22);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.55), 0 0 0 1px rgba(245,197,24,0.08);
+    }
+
+    /* ─── HEADER ─── */
+    .card-header {
+      background: linear-gradient(135deg, #f5c518 0%, #e8a900 50%, #f5c518 100%);
+      padding: 28px 22px 22px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-header::before {
+      content: '⚡';
+      position: absolute;
+      top: -10px; left: 10px;
+      font-size: 80px;
+      opacity: 0.08;
+      line-height: 1;
+    }
+    .card-header::after {
+      content: '⚡';
+      position: absolute;
+      bottom: -10px; right: 10px;
+      font-size: 80px;
+      opacity: 0.08;
+      line-height: 1;
+    }
+
+    .badge-city {
+      display: inline-block;
+      background: rgba(0,0,0,0.18);
+      color: #0a0e1a;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 30px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .header-icon {
+      font-size: 52px;
+      line-height: 1;
+      margin-bottom: 6px;
+      display: block;
+      filter: drop-shadow(0 3px 8px rgba(0,0,0,0.25));
+    }
+
+    .card-header h1 {
+      font-size: 24px;
+      font-weight: 900;
+      color: #0a0e1a;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .card-header .subtitle {
+      font-size: 14px;
+      color: rgba(10,14,26,0.72);
+      font-weight: 600;
+    }
+
+    /* ─── OFFER BANNER ─── */
+    .offer-banner {
+      background: linear-gradient(90deg, #0d47a1, #1565c0, #0d47a1);
+      padding: 12px 22px;
+      text-align: center;
+    }
+    .offer-banner p {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .offer-banner span {
+      color: var(--gold);
+      font-size: 18px;
+    }
+
+    /* ─── BODY ─── */
+    .card-body {
+      padding: 22px 20px;
+    }
+
+    /* ─── SECTION TITLE ─── */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 12px;
+      margin-top: 18px;
+    }
+    .section-title:first-child { margin-top: 0; }
+    .section-title::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: var(--gold);
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    /* ─── SERVICES GRID ─── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .service-item {
+      background: rgba(245,197,24,0.07);
+      border: 1px solid rgba(245,197,24,0.18);
+      border-radius: 12px;
+      padding: 12px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .service-item:hover {
+      background: rgba(245,197,24,0.14);
+      border-color: rgba(245,197,24,0.4);
+    }
+    .service-item .icon { font-size: 20px; flex-shrink: 0; }
+
+    /* ─── FEATURES LIST ─── */
+    .features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .features-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #c8d6f0;
+      line-height: 1.45;
+    }
+    .features-list li .check {
+      width: 22px;
+      height: 22px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      box-shadow: 0 2px 6px rgba(245,197,24,0.4);
+    }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(245,197,24,0.22), transparent);
+      margin: 18px 0;
+    }
+
+    /* ─── CONTACT BOX ─── */
+    .contact-box {
+      background: linear-gradient(135deg, rgba(13,71,161,0.22), rgba(21,101,192,0.12));
+      border: 1.5px solid rgba(13,71,161,0.45);
+      border-radius: 16px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .contact-box .label {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .contact-box .phone-num {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: 2px;
+      direction: ltr;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border-radius: 50px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      flex: 1;
+      max-width: 200px;
+    }
+    .btn:active { transform: scale(0.96); }
+
+    .btn-call {
+      background: linear-gradient(135deg, #1976d2, #0d47a1);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(13,71,161,0.5);
+    }
+    .btn-call:hover { box-shadow: 0 6px 28px rgba(13,71,161,0.7); transform: translateY(-1px); }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .btn-whatsapp:hover { box-shadow: 0 6px 28px rgba(37,211,102,0.6); transform: translateY(-1px); }
+
+    .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    /* ─── FOOTER ─── */
+    .card-footer {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(245,197,24,0.1);
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .card-footer p {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .card-footer a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .card-footer a:hover { text-decoration: underline; }
+
+    /* ─── FLOATING SIDE BUTTONS ─── */
+    .float-btns {
+      position: fixed;
+      left: 14px;
+      bottom: 50%;
+      transform: translateY(50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .float-btn {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+      transition: transform 0.18s, box-shadow 0.18s;
+      position: relative;
+    }
+    .float-btn:active { transform: scale(0.92); }
+    .float-btn:hover { transform: scale(1.08); }
+    .float-btn svg { width: 26px; height: 26px; }
+
+    .float-wa {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      box-shadow: 0 4px 18px rgba(37,211,102,0.5);
+    }
+    .float-wa:hover { box-shadow: 0 6px 26px rgba(37,211,102,0.7); }
+
+    .float-call {
+      background: linear-gradient(135deg, #1976d2, #0d47a1);
+      box-shadow: 0 4px 18px rgba(13,71,161,0.55);
+    }
+    .float-call:hover { box-shadow: 0 6px 26px rgba(13,71,161,0.75); }
+
+    .float-btn .tip {
+      position: absolute;
+      left: 62px;
+      background: rgba(10,14,26,0.92);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+      direction: ltr;
+    }
+    .float-btn:hover .tip { opacity: 1; }
+
+    /* pulse animation */
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6), 0 4px 18px rgba(37,211,102,0.5); }
+      70% { box-shadow: 0 0 0 12px rgba(37,211,102,0), 0 4px 18px rgba(37,211,102,0.5); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 4px 18px rgba(37,211,102,0.5); }
+    }
+    .float-wa { animation: pulse-ring 2.2s infinite; }
+
+    @keyframes pulse-call {
+      0% { box-shadow: 0 0 0 0 rgba(25,118,210,0.6), 0 4px 18px rgba(13,71,161,0.55); }
+      70% { box-shadow: 0 0 0 12px rgba(25,118,210,0), 0 4px 18px rgba(13,71,161,0.55); }
+      100% { box-shadow: 0 0 0 0 rgba(25,118,210,0), 0 4px 18px rgba(13,71,161,0.55); }
+    }
+    .float-call { animation: pulse-call 2.6s infinite; }
+
+    /* ─── STARS DECORATION ─── */
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      margin-bottom: 6px;
+    }
+    .stars span { color: var(--gold); font-size: 16px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 360px) {
+      .card-header h1 { font-size: 20px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .contact-box .phone-num { font-size: 24px; }
+    }
+
+    @media (min-width: 520px) {
+      body { padding: 30px 20px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Side Buttons -->
+  <div class="float-btns">
+    <a class="float-btn float-wa" href="https://wa.me/966544885698" target="_blank" rel="noopener" aria-label="واتساب">
+      <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.854L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.36-.213-3.76.98 1.006-3.658-.235-.376A9.818 9.818 0 1112 21.818z"/>
+      </svg>
+      <span class="tip">+966544885698</span>
+    </a>
+    <a class="float-btn float-call" href="tel:0544885698" aria-label="اتصال">
+      <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span class="tip">اتصال مباشر</span>
+    </a>
+  </div>
+
+  <!-- Main Card -->
+  <div class="card">
+
+    <!-- Header -->
+    <div class="card-header">
+      <div class="badge-city">📍 جـدة – المملكة العربية السعودية</div>
+      <span class="header-icon">⚡</span>
+      <h1>خدمات الكهرباء<br/>تأسيس وتشطيب</h1>
+      <p class="subtitle">عمائر • فلل • شقق • مجمعات سكنية</p>
+    </div>
+
+    <!-- Offer Banner -->
+    <div class="offer-banner">
+      <p>🔥 خصومات خاصة على العقود – <span>اتصل الآن للاستفسار</span></p>
+    </div>
+
+    <!-- Body -->
+    <div class="card-body">
+
+      <!-- Stars -->
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+
+      <!-- Services -->
+      <div class="section-title">خدماتنا</div>
+      <div class="services-grid">
+        <div class="service-item"><span class="icon">🏗️</span> تأسيس كهربائي</div>
+        <div class="service-item"><span class="icon">✨</span> تشطيب احترافي</div>
+        <div class="service-item"><span class="icon">🏢</span> عمائر سكنية</div>
+        <div class="service-item"><span class="icon">🏡</span> فلل وقصور</div>
+        <div class="service-item"><span class="icon">🔌</span> لوحات كهربائية</div>
+        <div class="service-item"><span class="icon">💡</span> إضاءة وديكور</div>
+        <div class="service-item"><span class="icon">🛡️</span> تأريض وحماية</div>
+        <div class="service-item"><span class="icon">🔧</span> صيانة وإصلاح</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Features -->
+      <div class="section-title">لماذا نحن؟</div>
+      <ul class="features-list">
+        <li>
+          <span class="check">✓</span>
+          <span>خبرة أكثر من <strong>10 سنوات</strong> في مجال الكهرباء</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>فريق مُرخَّص ومعتمد من الجهات الرسمية السعودية</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>ضمان على جميع الأعمال بعد الانتهاء</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>أسعار تنافسية وشفافة – لا رسوم خفية</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>خدمة طارئة متاحة على مدار الساعة</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>التزام تام بالمواعيد وسرعة في التنفيذ</span>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <!-- Contact -->
+      <div class="contact-box">
+        <p class="label">📞 تواصل معنا الآن</p>
+        <span class="phone-num">0544885698</span>
+        <div class="btn-row">
+          <a class="btn btn-call" href="tel:0544885698">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            اتصال
+          </a>
+          <a class="btn btn-whatsapp" href="https://wa.me/966544885698" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.854L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.36-.213-3.76.98 1.006-3.658-.235-.376A9.818 9.818 0 1112 21.818z"/></svg>
+            واتساب
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /card-body -->
+
+    <!-- Footer -->
+    <div class="card-footer">
+      <p>تم التصميم بواسطة
+        <a href="https://wa.me/201029095046" target="_blank" rel="noopener">م. نجوي إبراهيم</a>
+      </p>
+      <p style="margin-top:4px; font-size:11px; color:#64748b;">جميع الحقوق محفوظة © 2025</p>
+    </div>
+
+  </div><!-- /card -->
+
+  <script>
+    // Smooth entrance animation
+    document.addEventListener('DOMContentLoaded', function () {
+      var card = document.querySelector('.card');
+      var floatBtns = document.querySelector('.float-btns');
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      floatBtns.style.opacity = '0';
+      floatBtns.style.transition = 'opacity 0.8s ease 0.5s';
+      setTimeout(function () {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+        floatBtns.style.opacity = '1';
+      }, 80);
+
+      // TikTok Pixel – Contact event on all call & whatsapp links
+      function fireContact() {
+        if (window.ttq) {
+          ttq.track('Contact');
+        }
+      }
+
+      document.querySelectorAll('a[href^="tel:"]').forEach(function (el) {
+        el.addEventListener('click', fireContact);
+      });
+
+      document.querySelectorAll('a[href*="wa.me"]').forEach(function (el) {
+        el.addEventListener('click', fireContact);
+      });
+    });
+  </script>
+
+</body>
+</html>
